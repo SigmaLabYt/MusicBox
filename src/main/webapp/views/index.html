@@ -1,0 +1,6 @@
+  <ul class="trackList">
+    <li ng-repeat="track in tracks">
+        <div class="trackTitle"><h1>{{track.name}} - {{track.artist.name}}</h1></div>
+        <img src={{track.image[3]["#text"]}} />
+    </li>
+  </ul>

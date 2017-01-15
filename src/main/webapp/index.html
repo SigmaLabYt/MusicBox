@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="MusicBox">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MusicBox | Open The Box</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/app.js"></script>
+</head>
+<body>
+    <div class="col-xs-3 fixed sidemenu">
+        <div class="header-block block">
+            <span class="fa fa-bars toggle" aria-hidden="true"></span>
+            <a href="#/"><h1 class="logo">MusicBOX</h1></a>
+            <!-- <a href="#/">discover</a>
+            <a href="#/test">test</a> -->
+        </div>
+        <div class="search-block block" ng-controller="SearchCtrl">
+            <input ng-keydown="change($event)" ng-init="amir" type="text" placeholder="Search..." />
+        </div>
+    </div>
+    <div class="col-xs-9 fixed home-page ng-view pull-right" ng-controller="DiscoverCtrl">
+        App is loading
+    </div>
+</body>
+</html>
